@@ -1,0 +1,73 @@
+/* src/App.css or src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add your custom font-face definition (if not done already) */
+/* src/index.css or src/App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Apply the font globally using the @layer directive */
+@layer base {
+  body {
+    font-family: 'Hellix', sans-serif;  
+   }
+}
+
+
+.swiper-button-prev{
+  left: 46% !important;
+  top: 97% !important;
+  border-radius: 50%;
+}
+.swiper-button-next{
+  right: 46% !important;
+  top: 97% !important;
+  border-radius: 50%;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .swiper-button-prev{
+    left: 40% !important;
+  }
+  .swiper-button-next{
+    right: 40% !important;
+ 
+  }
+  
+}
+@media screen and (max-width: 420px) {
+  .swiper-button-prev{
+    left: 35% !important;
+  }
+  .swiper-button-next{
+    right: 35% !important;
+ 
+  }
+  
+}
+
+.swiper-button-prev:after, .swiper-button-next:after{
+  font-size: 16px !important;
+}
+
+
+.btn-mode-light{
+  height: 40px !important;
+  width: 40px !important;
+  border: 1px solid black;
+}
+.btn-mode-dark{
+  height: 40px !important;
+  width: 40px !important;
+  border: 1px solid #BFF764;
+}
+
+.btn-mode-dark::after{
+color: #BFF764;
+}
+.btn-mode-light::after{
+color: black;
+}
