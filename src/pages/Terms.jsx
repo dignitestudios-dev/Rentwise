@@ -29,24 +29,24 @@ export default function Terms() {
         <div className="space-y-8">
           <Section title="General Terms">
             <p>
-              By accessing and placing an order with BioYap, you confirm that
+              By accessing and placing an order with rentwiser, you confirm that
               you are in agreement with and bound by the terms of service
               contained in the Terms & Conditions outlined below. These terms
               apply to the entire website and any email or other type of
-              communication between you and BioYap.
+              communication between you and rentwiser.
               <br />
               <br />
-              Under no circumstances shall BioYap team be liable for any direct,
+              Under no circumstances shall rentwiser team be liable for any direct,
               indirect, special, incidental or consequential damages, including,
               but not limited to, loss of data or profit, arising out of the
               use, or the inability to use, the materials on this site, even if
-              BioYap team or an authorized representative has been advised of
+              rentwiser team or an authorized representative has been advised of
               the possibility of such damages. If your use of materials from
               this site results in the need for servicing, repair or correction
               of equipment or data, you assume any costs thereof.
               <br />
               <br />
-              BioYap will not be responsible for any outcome that may occur
+              rentwiser will not be responsible for any outcome that may occur
               during the course of usage of our resources. We reserve the rights
               to change prices and revise the resources usage policy in any
               moment.
@@ -55,21 +55,21 @@ export default function Terms() {
 
           <Section title="License">
             <p>
-              BioYap grants you a revocable, non-exclusive, non-transferable,
+              rentwiser grants you a revocable, non-exclusive, non-transferable,
               limited license to download, install and use the website/app
               strictly in accordance with the terms of this Agreement.
               <br />
               <br />
-              These Terms & Conditions are a contract between you and BioYap
-              (referred to in these Terms & Conditions as "BioYap", "us", "we"
-              or "our"), the provider of the BioYap website and the services
-              accessible from the BioYap website (which are collectively
-              referred to in these Terms & Conditions as the "BioYap Service").
+              These Terms & Conditions are a contract between you and rentwiser
+              (referred to in these Terms & Conditions as "rentwiser", "us", "we"
+              or "our"), the provider of the rentwiser website and the services
+              accessible from the rentwiser website (which are collectively
+              referred to in these Terms & Conditions as the "rentwiser Service").
               <br />
               <br />
               You are agreeing to be bound by these Terms & Conditions. If you
               do not agree to these Terms & Conditions, please do not use the
-              BioYap Service. In these Terms & Conditions, "you" refers both to
+              rentwiser Service. In these Terms & Conditions, "you" refers both to
               you as an individual and to the entity you represent. If you
               violate any of these Terms & Conditions, we reserve the right to
               cancel your account or block access to your account without
@@ -92,22 +92,22 @@ export default function Terms() {
               </li>
               <li>
                 <strong>Company:</strong> when this terms mention "Company,"
-                "we," "us," or "our," it refers to BioYap LLC, (Tampa, Florida),
+                "we," "us," or "our," it refers to rentwiser LLC, (Tampa, Florida),
                 that is responsible for your information under this Terms &
                 Conditions.
               </li>
               <li>
-                <strong>Country:</strong> where BioYap or the owners/founders of
-                BioYap are based, in this case is United States of America
+                <strong>Country:</strong> where rentwiser or the owners/founders of
+                rentwiser are based, in this case is United States of America
               </li>
               <li>
                 <strong>Device:</strong> any internet connected device such as a
                 phone, tablet, computer or any other device that can be used to
-                visit BioYap and use the services.
+                visit rentwiser and use the services.
               </li>
               <li>
                 <strong>Service:</strong> refers to the service provided by
-                BioYap as described in the relative terms (if available) and on
+                rentwiser as described in the relative terms (if available) and on
                 this platform.
               </li>
               <li>
@@ -118,7 +118,7 @@ export default function Terms() {
               </li>
               <li>
                 <strong>You:</strong> a person or entity that is registered with
-                BioYap to use the Services.
+                rentwiser to use the Services.
               </li>
             </ul>
           </Section>
@@ -139,7 +139,7 @@ export default function Terms() {
               </li>
               <li>
                 Remove, alter or obscure any proprietary notice (including any
-                notice of copyright or trademark) of BioYap or its affiliates,
+                notice of copyright or trademark) of rentwiser or its affiliates,
                 partners, suppliers or the licensors of the website/app.
               </li>
             </ul>
@@ -147,17 +147,17 @@ export default function Terms() {
 
           <Section title="Return and Refund Policy">
             <p>
-              Thanks for shopping at BioYap. We appreciate the fact that you
+              Thanks for shopping at rentwiser. We appreciate the fact that you
               like to buy the stuff we build. We also want to make sure you have
               a rewarding experience while you're exploring, evaluating, and
               purchasing our products.
               <br />
               <br />
               As with any shopping experience, there are terms and conditions
-              that apply to transactions at BioYap. We'll be as brief as our
+              that apply to transactions at rentwiser. We'll be as brief as our
               attorneys will allow. The main thing to remember is that by
-              placing an order or making a purchase at BioYap, you agree to the
-              terms along with BioYap's Privacy Policy.
+              placing an order or making a purchase at rentwiser, you agree to the
+              terms along with rentwiser's Privacy Policy.
               <br />
               <br />
               If, for any reason, You are not completely satisfied with any good
@@ -170,12 +170,12 @@ export default function Terms() {
           <Section title="Your Suggestions">
             <p>
               Any feedback, comments, ideas, improvements or suggestions
-              (collectively, "Suggestions") provided by you to BioYap with
+              (collectively, "Suggestions") provided by you to rentwiser with
               respect to the website/app shall remain the sole and exclusive
-              property of BioYap.
+              property of rentwiser.
               <br />
               <br />
-              BioYap shall be free to use, copy, modify, publish, or
+              rentwiser shall be free to use, copy, modify, publish, or
               redistribute the Suggestions for any purpose and in any way
               without any credit or any compensation to you.
             </p>
@@ -195,7 +195,7 @@ export default function Terms() {
             <p>
               This Terms & Conditions applies only to the Services. The Services
               may contain links to other websites not operated or controlled by
-              BioYap. We are not responsible for the content, accuracy or
+              rentwiser. We are not responsible for the content, accuracy or
               opinions expressed in such websites, and such websites are not
               investigated, monitored or checked for accuracy or completeness by
               us. Please remember that when you use a link to go from the
@@ -210,7 +210,7 @@ export default function Terms() {
 
           <Section title="Cookies">
             <p>
-              BioYap uses "Cookies" to identify the areas of our website/app
+              rentwiser uses "Cookies" to identify the areas of our website/app
               that you have visited. A Cookie is a small piece of data stored on
               your computer or mobile device by your web browser. We use Cookies
               to enhance the performance and functionality of our website/app
@@ -228,12 +228,12 @@ export default function Terms() {
 
           <Section title="Changes To Our Terms & Conditions">
             <p>
-              You acknowledge and agree that BioYap may stop (permanently or
+              You acknowledge and agree that rentwiser may stop (permanently or
               temporarily) providing the Service (or any features within the
-              Service) to you or to users generally at BioYap's sole discretion,
+              Service) to you or to users generally at rentwiser's sole discretion,
               without prior notice to you. You may stop using the Service at any
-              time. You do not need to specifically inform BioYap when you stop
-              using the Service. You acknowledge and agree that if BioYap
+              time. You do not need to specifically inform rentwiser when you stop
+              using the Service. You acknowledge and agree that if rentwiser
               disables access to your account, you may be prevented from
               accessing the Service, your account details or any files or other
               materials which is contained in your account.
@@ -247,7 +247,7 @@ export default function Terms() {
 
           <Section title="Modifications to Our website/app">
             <p>
-              BioYap reserves the right to modify, suspend or discontinue,
+              rentwiser reserves the right to modify, suspend or discontinue,
               temporarily or permanently, the website/app or any service to
               which it connects, with or without notice and without liability to
               you.
@@ -256,14 +256,14 @@ export default function Terms() {
 
           <Section title="Updates to Our website/app">
             <p>
-              BioYap may from time to time provide enhancements or improvements
+              rentwiser may from time to time provide enhancements or improvements
               to the features/ functionality of the website/app, which may
               include patches, bug fixes, updates, upgrades and other
               modifications ("Updates").
               <br />
               <br />
               Updates may modify or delete certain features and/or
-              functionalities of the website/app. You agree that BioYap has no
+              functionalities of the website/app. You agree that rentwiser has no
               obligation to (i) provide any Updates, or (ii) continue to provide
               or enable any particular features and/or functionalities of the
               website/app to you.
@@ -283,10 +283,10 @@ export default function Terms() {
               ("Third- Party Services").
               <br />
               <br />
-              You acknowledge and agree that BioYap shall not be responsible for
+              You acknowledge and agree that rentwiser shall not be responsible for
               any Third-Party Services, including their accuracy, completeness,
               timeliness, validity, copyright compliance, legality, decency,
-              quality or any other aspect thereof. BioYap does not assume and
+              quality or any other aspect thereof. rentwiser does not assume and
               shall not have any liability or responsibility to you or any other
               person or entity for any Third-Party Services.
               <br />
@@ -300,16 +300,16 @@ export default function Terms() {
           <Section title="Term and Termination">
             <p>
               This Agreement shall remain in effect until terminated by you or
-              BioYap.
+              rentwiser.
               <br />
               <br />
-              BioYap may, in its sole discretion, at any time and for any or no
+              rentwiser may, in its sole discretion, at any time and for any or no
               reason, suspend or terminate this Agreement with or without prior
               notice.
               <br />
               <br />
               This Agreement will terminate immediately, without prior notice
-              from BioYap, in the event that you fail to comply with any
+              from rentwiser, in the event that you fail to comply with any
               provision of this Agreement. You may also terminate this Agreement
               by deleting the website/app and all copies thereof from your
               computer.
@@ -320,7 +320,7 @@ export default function Terms() {
               computer.
               <br />
               <br />
-              Termination of this Agreement will not limit any of BioYap's
+              Termination of this Agreement will not limit any of rentwiser's
               rights or remedies at law or in equity in case of breach by you
               (during the term of this Agreement) of any of your obligations
               under the present Agreement.
@@ -346,7 +346,7 @@ export default function Terms() {
 
           <Section title="Indemnification">
             <p>
-              You agree to indemnify and hold BioYap and its parents,
+              You agree to indemnify and hold rentwiser and its parents,
               subsidiaries, affiliates, officers, employees, agents, partners
               and licensors (if any) harmless from any claim or demand,
               including reasonable attorneys' fees, due to or arising out of
@@ -360,7 +360,7 @@ export default function Terms() {
             <p>
               The website/app is provided to you "AS IS" and "AS AVAILABLE" and
               with all faults and defects without warranty of any kind. To the
-              maximum extent permitted under applicable law, BioYap, on its own
+              maximum extent permitted under applicable law, rentwiser, on its own
               behalf and on behalf of its affiliates and its and their
               respective licensors and service providers, expressly disclaims
               all warranties, whether express, implied, statutory or otherwise,
@@ -368,7 +368,7 @@ export default function Terms() {
               of merchantability, fitness for a particular purpose, title and
               non-infringement, and warranties that may arise out of course of
               dealing, course of performance, usage or trade practice. Without
-              limitation to the foregoing, BioYap provides no warranty or
+              limitation to the foregoing, rentwiser provides no warranty or
               undertaking, and makes no representation of any kind that the
               website/app will meet your requirements, achieve any intended
               results, be compatible or work with any other software,
@@ -377,7 +377,7 @@ export default function Terms() {
               that any errors or defects can or will be corrected.
               <br />
               <br />
-              Without limiting the foregoing, neither BioYap nor any BioYap's
+              Without limiting the foregoing, neither rentwiser nor any rentwiser's
               provider makes any representation or warranty of any kind, express
               or implied: (i) as to the operation or availability of the
               website/app, or the information, content, and materials or
@@ -385,7 +385,7 @@ export default function Terms() {
               uninterrupted or error-free; (iii) as to the accuracy,
               reliability, or currency of any information or content provided
               through the website/app; or (iv) that the website/app, its
-              servers, the content, or e-mails sent from or on behalf of BioYap
+              servers, the content, or e-mails sent from or on behalf of rentwiser
               are free of viruses, scripts, trojan horses, worms, malware,
               timebombs or other harmful components.
               <br />
@@ -400,14 +400,14 @@ export default function Terms() {
           <Section title="Limitation of Liability">
             <p>
               Notwithstanding any damages that you might incur, the entire
-              liability of BioYap and any of its suppliers under any provision
+              liability of rentwiser and any of its suppliers under any provision
               of this Agreement and your exclusive remedy for all of the
               foregoing shall be limited to the amount actually paid by you for
               the website/app.
               <br />
               <br />
               To the maximum extent permitted by applicable law, in no event
-              shall BioYap or its suppliers be liable for any special,
+              shall rentwiser or its suppliers be liable for any special,
               incidental, indirect, or consequential damages whatsoever
               (including, but not limited to, damages for loss of profits, for
               loss of data or other information, for business interruption, for
@@ -415,7 +415,7 @@ export default function Terms() {
               related to the use of or inability to use the website/app,
               third-party software and/or third-party hardware used with the
               website/app, or otherwise in connection with any provision of this
-              Agreement), even if BioYap or any supplier has been advised of the
+              Agreement), even if rentwiser or any supplier has been advised of the
               possibility of such damages and even if the remedy fails of its
               essential purpose.
               <br />
@@ -436,17 +436,17 @@ export default function Terms() {
               <br />
               <br />
               This Agreement, together with the Privacy Policy and any other
-              legal notices published by BioYap on the Services, shall
-              constitute the entire agreement between you and BioYap concerning
+              legal notices published by rentwiser on the Services, shall
+              constitute the entire agreement between you and rentwiser concerning
               the Services. If any provision of this Agreement is deemed invalid
               by a court of competent jurisdiction, the invalidity of such
               provision shall not affect the validity of the remaining
               provisions of this Agreement, which shall remain in full force and
               effect. No waiver of any term of this Agreement shall be deemed a
               further or continuing waiver of such term or any other term, and
-              BioYap's failure to assert any right or provision under this
+              rentwiser's failure to assert any right or provision under this
               Agreement shall not constitute a waiver of such right or
-              provision. YOU AND BioYap AGREE THAT ANY CAUSE OF ACTION ARISING
+              provision. YOU AND rentwiser AGREE THAT ANY CAUSE OF ACTION ARISING
               OUT OF OR RELATED TO THE SERVICES MUST COMMENCE WITHIN ONE (1)
               YEAR AFTER THE CAUSE OF ACTION ACCRUES. OTHERWISE, SUCH CAUSE OF
               ACTION IS PERMANENTLY BARRED.
@@ -475,7 +475,7 @@ export default function Terms() {
 
           <Section title="Amendments to this Agreement">
             <p>
-              BioYap reserves the right, at its sole discretion, to modify or
+              rentwiser reserves the right, at its sole discretion, to modify or
               replace this Agreement at any time. If a revision is material we
               will provide at least 30 days' notice prior to any new terms
               taking effect. What constitutes a material change will be
@@ -485,20 +485,20 @@ export default function Terms() {
               By continuing to access or use our website/app after any revisions
               become effective, you agree to be bound by the revised terms. If
               you do not agree to the new terms, you are no longer authorized to
-              use BioYap.
+              use rentwiser.
             </p>
           </Section>
 
           <Section title="Entire Agreement">
             <p>
               The Agreement constitutes the entire agreement between you and
-              BioYap regarding your use of the website/app and supersedes all
+              rentwiser regarding your use of the website/app and supersedes all
               prior and contemporaneous written or oral agreements between you
-              and BioYap.
+              and rentwiser.
               <br />
               <br />
               You may be subject to additional terms and conditions that apply
-              when you use or purchase other BioYap's services, which BioYap
+              when you use or purchase other rentwiser's services, which rentwiser
               will provide to you at the time of such use or purchase.
             </p>
           </Section>
@@ -521,13 +521,13 @@ export default function Terms() {
               The website/app and its entire contents, features and
               functionality (including but not limited to all information,
               software, text, displays, images, video and audio, and the design,
-              selection and arrangement thereof), are owned by BioYap, its
+              selection and arrangement thereof), are owned by rentwiser, its
               licensors or other providers of such material and are protected by
               United States of America and international copyright, trademark,
               patent, trade secret and other intellectual property or
               proprietary rights laws. The material may not be copied, modified,
               reproduced, downloaded or distributed in any way, in whole or in
-              part, without the express prior written permission of BioYap,
+              part, without the express prior written permission of rentwiser,
               unless and except as is expressly provided in these Terms &
               Conditions. Any unauthorized use of the material is prohibited.
             </p>
@@ -537,9 +537,9 @@ export default function Terms() {
             <p>
               This section applies to any dispute EXCEPT IT DOESN'T INCLUDE A
               DISPUTE RELATING TO CLAIMS FOR INJUNCTIVE OR EQUITABLE RELIEF
-              REGARDING THE ENFORCEMENT OR VALIDITY OF YOUR OR BioYap's
+              REGARDING THE ENFORCEMENT OR VALIDITY OF YOUR OR rentwiser's
               INTELLECTUAL PROPERTY RIGHTS. The term "dispute" means any
-              dispute, action, or other controversy between you and BioYap
+              dispute, action, or other controversy between you and rentwiser
               concerning the Services or this agreement, whether in contract,
               warranty, tort, statute, regulation, ordinance, or any other legal
               or equitable basis. "Dispute" will be given the broadest possible
@@ -549,23 +549,23 @@ export default function Terms() {
 
           <Section title="Notice of Dispute">
             <p>
-              In the event of a dispute, you or BioYap must give the other a
+              In the event of a dispute, you or rentwiser must give the other a
               Notice of Dispute, which is a written statement that sets forth
               the name, address, and contact information of the party giving it,
               the facts giving rise to the dispute, and the relief requested.
-              You must send any Notice of Dispute via email to: info@bioyap.com.
-              BioYap will send any Notice of Dispute to you by mail to your
+              You must send any Notice of Dispute via email to: info@rentwiser.com.
+              rentwiser will send any Notice of Dispute to you by mail to your
               address if we have it, or otherwise to your email address. You and
-              BioYap will attempt to resolve any dispute through informal
+              rentwiser will attempt to resolve any dispute through informal
               negotiation within sixty (60) days from the date the Notice of
-              Dispute is sent. After sixty (60) days, you or BioYap may commence
+              Dispute is sent. After sixty (60) days, you or rentwiser may commence
               arbitration.
             </p>
           </Section>
 
           <Section title="Binding Arbitration">
             <p>
-              If you and BioYap don't resolve any dispute by informal
+              If you and rentwiser don't resolve any dispute by informal
               negotiation, any other effort to resolve the dispute will be
               conducted exclusively by binding arbitration as described in this
               section. You are giving up the right to litigate (or participate
@@ -589,8 +589,8 @@ export default function Terms() {
               services, features, technologies or promotions, you expressly
               agree that such submissions will automatically be treated as
               non-confidential and non-proprietary and will become the sole
-              property of BioYap without any compensation or credit to you
-              whatsoever. BioYap and its affiliates shall have no obligations
+              property of rentwiser without any compensation or credit to you
+              whatsoever. rentwiser and its affiliates shall have no obligations
               with respect to such submissions or posts and may use the ideas
               contained in such submissions or posts for any purposes in any
               medium in perpetuity, including, but not limited to, developing,
@@ -601,7 +601,7 @@ export default function Terms() {
 
           <Section title="Promotions">
             <p>
-              BioYap may, from time to time, include contests, promotions,
+              rentwiser may, from time to time, include contests, promotions,
               sweepstakes, or other activities ("Promotions") that require you
               to submit material or information concerning yourself. Please note
               that all Promotions may be governed by separate rules that may
@@ -640,21 +640,21 @@ export default function Terms() {
               unenforceable, the remainder of these Terms & Conditions will
               continue in full force and effect. Any waiver of any provision of
               these Terms & Conditions will be effective only if in writing and
-              signed by an authorized representative of BioYap. BioYap will be
+              signed by an authorized representative of rentwiser. rentwiser will be
               entitled to injunctive or other equitable relief (without the
               obligations of posting any bond or surety) in the event of any
-              breach or anticipatory breach by you. BioYap operates and controls
-              the BioYap Service from its offices in United States of America.
+              breach or anticipatory breach by you. rentwiser operates and controls
+              the rentwiser Service from its offices in United States of America.
               The Service is not intended for distribution to or use by any
               person or entity in any jurisdiction or country where such
               distribution or use would be contrary to law or regulation.
-              Accordingly, those persons who choose to access the BioYap Service
+              Accordingly, those persons who choose to access the rentwiser Service
               from other locations do so on their own initiative and are solely
               responsible for compliance with local laws, if and to the extent
               local laws are applicable. These Terms & Conditions (which include
-              and incorporate the BioYap Privacy Policy) contains the entire
+              and incorporate the rentwiser Privacy Policy) contains the entire
               understanding, and supersedes all prior understandings, between
-              you and BioYap concerning its subject matter, and cannot be
+              you and rentwiser concerning its subject matter, and cannot be
               changed or modified by you. The section headings used in this
               Agreement are for convenience only and will not be given any legal
               import.
@@ -663,14 +663,14 @@ export default function Terms() {
 
           <Section title="Disclaimer">
             <p>
-              BioYap is not responsible for any content, code or any other
+              rentwiser is not responsible for any content, code or any other
               imprecision.
               <br />
               <br />
-              BioYap does not provide warranties or guarantees.
+              rentwiser does not provide warranties or guarantees.
               <br />
               <br />
-              In no event shall BioYap be liable for any special, direct,
+              In no event shall rentwiser be liable for any special, direct,
               indirect, consequential, or incidental damages or any damages
               whatsoever, whether in an action of contract, negligence or other
               tort, arising out of or in connection with the use of the Service
@@ -679,26 +679,26 @@ export default function Terms() {
               Service at any time without prior notice.
               <br />
               <br />
-              The BioYap Service and its contents are provided "as is" and "as
+              The rentwiser Service and its contents are provided "as is" and "as
               available" without any warranty or representations of any kind,
-              whether express or implied. BioYap is a distributor and not a
+              whether express or implied. rentwiser is a distributor and not a
               publisher of the content supplied by third parties; as such,
-              BioYap exercises no editorial control over such content and makes
+              rentwiser exercises no editorial control over such content and makes
               no warranty or representation as to the accuracy, reliability or
               currency of any information, content, service or merchandise
-              provided through or accessible via the BioYap Service. Without
-              limiting the foregoing, BioYap specifically disclaims all
+              provided through or accessible via the rentwiser Service. Without
+              limiting the foregoing, rentwiser specifically disclaims all
               warranties and representations in any content transmitted on or in
-              connection with the BioYap Service or on sites that may appear as
-              links on the BioYap Service, or in the products provided as a part
-              of, or otherwise in connection with, the BioYap Service, including
+              connection with the rentwiser Service or on sites that may appear as
+              links on the rentwiser Service, or in the products provided as a part
+              of, or otherwise in connection with, the rentwiser Service, including
               without limitation any warranties of merchantability, fitness for
               a particular purpose or non-infringement of third party rights. No
-              oral advice or written information given by BioYap or any of its
+              oral advice or written information given by rentwiser or any of its
               affiliates, employees, officers, directors, agents, or the like
               will create a warranty. Price and availability information is
               subject to change without notice. Without limiting the foregoing,
-              BioYap does not warrant that the BioYap Service will be
+              rentwiser does not warrant that the rentwiser Service will be
               uninterrupted, uncorrupted, timely, or error-free.
             </p>
           </Section>
@@ -710,18 +710,18 @@ export default function Terms() {
               <br />
               Via Email:{" "}
               <a
-                href="mailto:info@bioyap.com"
+                href="mailto:info@rentwiser.com"
                 className="text-blue-600 hover:underline"
               >
-                info@bioyap.com
+                info@rentwiser.com
               </a>
               <br />
               Via this Link:{" "}
               <a
-                href="https://www.bioyap.com"
+                href="https://www.rentwiser.com"
                 className="text-blue-600 hover:underline"
               >
-                www.bioyap.com
+                www.rentwiser.com
               </a>
             </p>
           </Section>

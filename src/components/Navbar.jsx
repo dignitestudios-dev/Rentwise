@@ -146,7 +146,7 @@ const Navbar = () => {
           </svg>
         </button> */}
         </div>
-        {/* to='https://www.linkedin.com/company/bioyap/' target='_blank' */}
+        {/* to='https://www.linkedin.com/company/rentwiser/' target='_blank' */}
         <div className="hidden md:flex mb-2">
           <button
             onClick={() =>
@@ -196,7 +196,7 @@ const Navbar = () => {
           <div className="flex justify-center mt-2">
             <button
               onClick={()=>
-                navigateToLinkedIn("https://www.linkedin.com/company/bioyap/")
+                navigateToLinkedIn("https://www.linkedin.com/company/rentwiser/")
               }
               className="bg-[#1E2EDE] text-white px-5 py-2 rounded-full font-medium hover:bg-gray-200 md:w-[188px] h-[40px]"
             >

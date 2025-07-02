@@ -111,9 +111,9 @@ const Contact = () => {
             {/* Email */}
             <div>
               <h4 className="font-semibold mb-2">Email</h4>
-              <a href="mailto:info@bioyap.com" className="flex items-center">
+              <a href="mailto:info@rentwiser.com" className="flex items-center">
                 <FaEnvelope className="mr-3 text-xl" />
-                <p>info@bioyap.com</p>
+                <p>info@rentwiser.com</p>
               </a>
             </div>
 

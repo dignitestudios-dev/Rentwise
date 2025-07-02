@@ -31,15 +31,15 @@ export default function Privacy() {
             }`}
           >
             <p>
-              BioYap ("we," "our," or "us") is committed to protecting your
+              rentwiser ("we," "our," or "us") is committed to protecting your
               privacy. This Privacy Policy explains how your personal
-              information is collected, used, and disclosed by BioYap.
+              information is collected, used, and disclosed by rentwiser.
             </p>
             <br />
             <p>
               This Privacy Policy applies to our website/app, and its associated
               subdomains (collectively, our "Service") alongside our
-              application, BioYap. By accessing or using our Service, you
+              application, rentwiser. By accessing or using our Service, you
               signify that you have read, understood, and agree to our
               collection, storage, use, and disclosure of your personal
               information as described in this Privacy Policy and our Terms of
@@ -57,23 +57,23 @@ export default function Privacy() {
               </div>
               <div>
                 <strong>Company:</strong> when this policy mentions "Company,"
-                "we," "us," or "our," it refers to BioYap LLC, (Tampa, Florida),
+                "we," "us," or "our," it refers to rentwiser LLC, (Tampa, Florida),
                 that is responsible for your information under this Privacy
                 Policy.
               </div>
               <div>
-                <strong>Country:</strong> where BioYap or the owners/founders of
-                BioYap are based, in this case is United States of America.
+                <strong>Country:</strong> where rentwiser or the owners/founders of
+                rentwiser are based, in this case is United States of America.
               </div>
               <div>
                 <strong>Customer:</strong> refers to the company, organization
-                or person that signs up to use the BioYap Service to manage the
+                or person that signs up to use the rentwiser Service to manage the
                 relationships with your consumers or service users.
               </div>
               <div>
                 <strong>Device:</strong> any internet connected device such as a
                 phone, tablet, computer or any other device that can be used to
-                visit BioYap and use the services.
+                visit rentwiser and use the services.
               </div>
               <div>
                 <strong>IP address:</strong> Every device connected to the
@@ -84,7 +84,7 @@ export default function Privacy() {
               </div>
               <div>
                 <strong>Personnel:</strong> refers to those individuals who are
-                employed by BioYap or are under contract to perform a service on
+                employed by rentwiser or are under contract to perform a service on
                 behalf of one of the parties.
               </div>
               <div>
@@ -95,7 +95,7 @@ export default function Privacy() {
               </div>
               <div>
                 <strong>Service:</strong> refers to the service provided by
-                BioYap as described in the relative terms (if available) and on
+                rentwiser as described in the relative terms (if available) and on
                 this platform.
               </div>
               <div>
@@ -106,7 +106,7 @@ export default function Privacy() {
               </div>
               <div>
                 <strong>You:</strong> a person or entity that is registered with
-                BioYap to use the Services.
+                rentwiser to use the Services.
               </div>
             </div>
           </Section>
@@ -154,9 +154,9 @@ export default function Privacy() {
             </div>
           </Section>
 
-          <Section title="When Does BioYap Use End User Information from Third Parties?">
+          <Section title="When Does rentwiser Use End User Information from Third Parties?">
             <p>
-              BioYap will collect End User Data necessary to provide the BioYap
+              rentwiser will collect End User Data necessary to provide the rentwiser
               services to our customers. End users may voluntarily provide us
               with information they have made available on social media
               websites. If you provide us with any such information, we may
@@ -167,13 +167,13 @@ export default function Privacy() {
             </p>
           </Section>
 
-          <Section title="When Does BioYap Use Customer Information from Third Parties?">
+          <Section title="When Does rentwiser Use Customer Information from Third Parties?">
             <p>
               We receive some information from the third parties when you
               contact us. For example, when you submit your email address to us
-              to show interest in becoming a BioYap customer, we receive
+              to show interest in becoming a rentwiser customer, we receive
               information from a third party that provides automated fraud
-              detection services to BioYap. We also occasionally collect
+              detection services to rentwiser. We also occasionally collect
               information that is made publicly available on social media
               websites. You can control how much of your information social
               media websites make public by visiting these websites and changing
@@ -289,7 +289,7 @@ export default function Privacy() {
           <Section title="How Long Do We Keep Your Information?">
             <p>
               We keep your information only so long as we need it to provide
-              BioYap to you and fulfill the purposes described in this policy.
+              rentwiser to you and fulfill the purposes described in this policy.
               This is also the case for anyone that we share your information
               with and who carries out services on our behalf. When we no longer
               need to use your information and there is no need for us to keep
@@ -312,7 +312,7 @@ export default function Privacy() {
               After a transaction, your private information (credit cards,
               social security numbers, financials, etc.) is never kept on file.
               We cannot, however, ensure or warrant the absolute security of any
-              information you transmit to BioYap or guarantee that your
+              information you transmit to rentwiser or guarantee that your
               information on the Service may not be accessed, disclosed,
               altered, or destroyed by a breach of any of our physical,
               technical, or managerial safeguards.
@@ -321,7 +321,7 @@ export default function Privacy() {
 
           <Section title="Could My Information Be Transferred to Other Countries?">
             <p>
-              BioYap is incorporated in United States of America. Information
+              rentwiser is incorporated in United States of America. Information
               collected via our website/app, through direct interactions with
               you, or from use of our help services may be transferred from time
               to time to our offices or personnel, or to third parties, located
@@ -334,7 +334,7 @@ export default function Privacy() {
             </p>
           </Section>
 
-          <Section title="Is the information collected through the BioYap Service secure?">
+          <Section title="Is the information collected through the rentwiser Service secure?">
             <p>
               We take precautions to protect the security of your information.
               We have physical, electronic, and managerial procedures to help
@@ -354,8 +354,8 @@ export default function Privacy() {
           <Section title="Can I update or correct my information?">
             <p>
               The rights you have to request updates or corrections to the
-              information BioYap collects depend on your relationship with
-              BioYap. Personnel may update or correct their information as
+              information rentwiser collects depend on your relationship with
+              rentwiser. Personnel may update or correct their information as
               detailed in our internal company employment policies.
             </p>
             <br />
@@ -401,7 +401,7 @@ export default function Privacy() {
 
           <Section title="Personnel">
             <p>
-              If you are a BioYap worker or applicant, we collect information
+              If you are a rentwiser worker or applicant, we collect information
               you voluntarily provide to us. We use the information collected
               for Human Resources purposes in order to administer benefits to
               workers and screen applicants.
@@ -423,8 +423,8 @@ export default function Privacy() {
             <p>
               We reserve the right to transfer information to a third party in
               the event of a sale, merger or other transfer of all or
-              substantially all of the assets of BioYap or any of its Corporate
-              Affiliates (as defined herein), or that portion of BioYap or any
+              substantially all of the assets of rentwiser or any of its Corporate
+              Affiliates (as defined herein), or that portion of rentwiser or any
               of its Corporate Affiliates to which the Service relates, or in
               the event that we discontinue our business or file a petition or
               have filed against us a petition in bankruptcy, reorganization or
@@ -439,7 +439,7 @@ export default function Privacy() {
               you to our Corporate Affiliates. For purposes of this Privacy
               Policy, "Corporate Affiliate" means any person or entity which
               directly or indirectly controls, is controlled by or is under
-              common control with BioYap, whether by ownership or otherwise. Any
+              common control with rentwiser, whether by ownership or otherwise. Any
               information relating to you that we provide to our Corporate
               Affiliates will be treated by those Corporate Affiliates in
               accordance with the terms of this Privacy Policy.
@@ -465,7 +465,7 @@ export default function Privacy() {
             </p>
             <br />
             <p>
-              By using BioYap or contacting us directly, you signify your
+              By using rentwiser or contacting us directly, you signify your
               acceptance of this Privacy Policy. If you do not agree to this
               Privacy Policy, you should not engage with our website/app, or use
               our services. Continued use of the website/app, direct engagement
@@ -479,7 +479,7 @@ export default function Privacy() {
             <p>
               We've updated our Privacy Policy to provide you with complete
               transparency into what is being set when you visit our site and
-              how it's being used. By using our BioYap, registering an account,
+              how it's being used. By using our rentwiser, registering an account,
               or making a purchase, you hereby consent to our Privacy Policy and
               agree to its terms.
             </p>
@@ -489,7 +489,7 @@ export default function Privacy() {
             <p>
               This Privacy Policy applies only to the Services. The Services may
               contain links to other websites not operated or controlled by
-              BioYap. We are not responsible for the content, accuracy or
+              rentwiser. We are not responsible for the content, accuracy or
               opinions expressed in such websites, and such websites are not
               investigated, monitored or checked for accuracy or completeness by
               us. Please remember that when you use a link to go from the
@@ -504,7 +504,7 @@ export default function Privacy() {
 
           <Section title="Cookies">
             <p>
-              BioYap uses "Cookies" to identify the areas of our website/app
+              rentwiser uses "Cookies" to identify the areas of our website/app
               that you have visited. A Cookie is a small piece of data stored on
               your computer or mobile device by your web browser. We use Cookies
               to enhance the performance and functionality of our website/app
@@ -581,10 +581,10 @@ export default function Privacy() {
             </p>
             <br />
             <p>
-              You acknowledge and agree that BioYap shall not be responsible for
+              You acknowledge and agree that rentwiser shall not be responsible for
               any Third-Party Services, including their accuracy, completeness,
               timeliness, validity, copyright compliance, legality, decency,
-              quality or any other aspect thereof. BioYap does not assume and
+              quality or any other aspect thereof. rentwiser does not assume and
               shall not have any liability or responsibility to you or any other
               person or entity for any Third-Party Services.
             </p>
@@ -741,18 +741,18 @@ export default function Privacy() {
               <br />
               Via Email:{" "}
               <a
-                href="mailto:info@bioyap.com"
+                href="mailto:info@rentwiser.com"
                 className="text-blue-600 hover:underline"
               >
-                info@bioyap.com
+                info@rentwiser.com
               </a>
               <br />
               Via this Link:{" "}
               <a
-                href="https://www.bioyap.com"
+                href="https://www.rentwiser.com"
                 className="text-blue-600 hover:underline"
               >
-                www.bioyap.com
+                www.rentwiser.com
               </a>
             </p>
           </Section>
