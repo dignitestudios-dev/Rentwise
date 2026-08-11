@@ -1,85 +1,93 @@
 import React, { useContext } from "react";
-import {
-  about,
-  appstore,
-  footerMob,
-  heroGradientimage,
-  playstore,
-} from "../assets/export";
+import { about } from "../assets/export";
 import { GlobalContext } from "../context/GlobalContext";
 
+const ReadyJoinIphoneMockup = ({ src, alt }) => (
+  <div className="relative mx-auto w-full max-w-[260px] sm:max-w-[290px] p-2 bg-[#121316] rounded-[40px] shadow-[0_25px_60px_-15px_rgba(0,0,0,0.5)] border-2 border-slate-800 ring-1 ring-white/10 transform hover:scale-105 transition-transform duration-500">
+    {/* Left Volume Buttons */}
+    <div className="absolute -left-[4px] top-20 w-[3px] h-7 bg-slate-700 rounded-l-md" />
+    <div className="absolute -left-[4px] top-32 w-[3px] h-7 bg-slate-700 rounded-l-md" />
+    {/* Right Power Button */}
+    <div className="absolute -right-[4px] top-24 w-[3px] h-10 bg-slate-700 rounded-r-md" />
+
+    {/* Dynamic Island */}
+    <div className="absolute top-3.5 left-1/2 -translate-x-1/2 w-14 h-3.5 bg-black rounded-full z-20 flex items-center justify-end px-1.5 shadow-sm">
+      <div className="w-2 h-2 rounded-full bg-[#1e1f24] border border-slate-800" />
+    </div>
+
+    {/* Screen Frame */}
+    <div className="relative overflow-hidden rounded-[32px] bg-black aspect-[9/19] w-full flex items-start justify-center shadow-inner">
+      <img
+        src={src}
+        alt={alt}
+        className="w-full h-full object-cover object-top scale-[1.03]"
+      />
+    </div>
+
+    {/* Home Indicator */}
+    <div className="absolute bottom-3.5 left-1/2 -translate-x-1/2 w-20 h-1 bg-slate-400/40 rounded-full z-20" />
+  </div>
+);
+
 export default function ReadyJoin() {
-  const { theme, setTheme } = useContext(GlobalContext);
+  const { theme } = useContext(GlobalContext);
   return (
-    <div>
-      <div className={`relative ${theme == "dark" ? "bg-black" : ""} `}>
-        <div className="container px-10 flex items-center justify-between flex-wrap md:flex-nowrap">
-          <div
-            className="relative mx-auto md:mx-0  sm:w-[40%]  overflow-hiddenlg:mb-0  flex items-center min-h-screen"
-            style={{
-              backgroundImage: `url(${about})`,
-              backgroundSize: "100%",
-              backgroundPosition: "center ",
-              backgroundRepeat: "no-repeat",
-            }}
+    <div
+      className={`${
+        theme === "dark" ? "bg-black" : "bg-white"
+      } py-16 transition-colors duration-300`}
+    >
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-12">
+        <div
+          className="relative w-full md:w-1/2 flex items-center justify-center py-6"
+          style={{
+            backgroundImage: `url(${about})`,
+            backgroundSize: "80%",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <ReadyJoinIphoneMockup
+            src="/images/mockups/guesswork.png"
+            alt="Take the Guesswork Out of Renting Mobile Mockup"
+          />
+        </div>
+
+        <div className="w-full md:w-1/2 max-w-2xl">
+          <h3
+            className={`text-3xl sm:text-4xl lg:text-[44px] font-bold leading-tight mb-4 ${
+              theme === "dark" ? "text-white" : "text-black"
+            }`}
           >
-            <div className="">
-              <img
-                src={"heroGradientimage"}
-                className="absolute top-[0px] w-[900px]"
-                style={{ zIndex: "-1" }}
-                alt=""
-              />
-            </div>
-            <div className="flex justify-center w-full">
-              <img
-                src={
-                  theme == "dark"
-                    ? "/images/light/demo2.png"
-                    : "/images/light/demo2.png"
-                }
-                alt="Phone"
-                className="w-auto h-auto sm:w-[200px]  lg:h-[500px] lg:w-auto"
-              />
-            </div>
-          </div>
-          <div
-            className={`p-10 rounded-2xl max-w-3xl mx-auto lg:w-[874px] lg:h-[284px] `}
+            Take the Guesswork <br className="hidden sm:inline" />
+            <span className="text-[#1E2EDE]">Out of Renting</span>
+          </h3>
+          <p
+            className={`text-base md:text-lg leading-relaxed mb-8 ${
+              theme === "dark" ? "text-[#B0B0B0]" : "text-[#565656]"
+            }`}
           >
-            <h3
-              className={`lg:text-[40px] font-[600] ${
-                theme === "dark" ? " text-white" : "text-black"
-              }`}
+            Stop relying on luck when choosing your next rental. With Adele, you
+            gain access to a powerful community-driven platform built for
+            renters, by renters. Discover hidden gems, avoid red flags, and
+            choose your next home with confidence. Whether you're searching or
+            sharing, you're making the rental experience better for everyone.
+            Start browsing real reviews now or leave one of your own—it’s time
+            to rent smarter.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <button
+              type="button"
+              className="bg-[#1E2EDE] hover:bg-[#1824b8] text-white px-6 py-2.5 rounded-full font-medium shadow-lg hover:shadow-xl transition-all duration-300 h-[44px]"
             >
-              Take the Guesswork Out of Renting
-            </h3>
-            <p
-              className={`text-[14px] mx-auto ${
-                theme === "dark" ? "text-[#B0B0B0]" : "text-[#565656CC]"
-              }`}
+              Explore Now
+            </button>
+            <button
+              type="button"
+              className="bg-[#1E2EDE] hover:bg-[#1824b8] text-white px-6 py-2.5 rounded-full font-medium shadow-lg hover:shadow-xl transition-all duration-300 h-[44px]"
             >
-              Stop relying on luck when choosing your next rental. With Adele,
-              you gain access to a powerful community-driven platform built for
-              renters, by renters. Discover hidden gems, avoid red flags, and
-              choose your next home with confidence. Whether you're searching or
-              sharing, you're making the rental experience better for everyone.
-              Start browsing real reviews now or leave one of your own—it’s time
-              to rent smarter.
-            </p>
-            <div className="mt-8 flex space-x-4">
-              <button
-                type="button"
-                className="bg-[#1E2EDE] text-white px-4 py-2 rounded-full font-medium  w-[133px] mt-6 h-[40px]"
-              >
-                Explore Now
-              </button>
-              <button
-                type="button"
-                className="bg-[#1E2EDE] text-white px-4 py-2 rounded-full font-medium  w-auto mt-6 h-[40px]"
-              >
-                Submit Your Review
-              </button>
-            </div>
+              Submit Your Review
+            </button>
           </div>
         </div>
       </div>
