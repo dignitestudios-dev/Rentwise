@@ -87,13 +87,13 @@ const Contact = () => {
       } flex justify-center items-center min-h-screen p-4`}
       id="contactus"
     >
-      <div className="  rounded-lg overflow-hidden lg:w-2/3 w-full flex flex-col lg:flex-row">
-        <div className={`bg-[#222222] ${theme == "dark" ? "text-white" : " text-[#565656]"} p-10 flex-1 flex flex-col justify-center rounded-t-3xl lg:rounded-tr-none lg:rounded-l-3xl w-full lg:w-[485px]`}>
-          <h2 className="text-2xl lg:text-4xl font-semibold mb-8">
+      <div className="rounded-lg overflow-hidden lg:w-2/3 w-full flex flex-col lg:flex-row">
+        <div className="bg-[#222222] text-white p-10 flex-1 flex flex-col justify-center rounded-t-3xl lg:rounded-tr-none lg:rounded-l-3xl w-full lg:w-[485px]">
+          <h2 className="text-2xl lg:text-4xl font-semibold mb-8 text-white">
             Rentwiser is Coming—Are <br />
             You  Ready?
           </h2>
-          <p className="mb-6 text-[14px] lg:text-base">
+          <p className="mb-6 text-[14px] lg:text-base text-gray-200">
             Join the Waitlist and Gain Early Access to the Only App Empowering
             BioPharma Professionals.
           </p>
