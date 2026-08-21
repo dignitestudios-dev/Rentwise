@@ -33,15 +33,13 @@ const About = () => {
   const { theme } = useContext(GlobalContext);
   return (
     <div
-      className={`${
-        theme === "dark" ? "bg-black" : "bg-white"
-      } flex flex-col lg:flex-row justify-center items-center py-16 px-6`}
+      className={`${theme === "dark" ? "bg-black" : "bg-white"
+        } flex flex-col lg:flex-row justify-center items-center py-16 px-6`}
       id="aboutus"
     >
       <div
-        className={`lg:w-1/2 max-w-xl text-center lg:text-left lg:mr-12 ${
-          theme === "dark" ? "text-white" : "text-black"
-        }`}
+        className={`lg:w-1/2 max-w-xl text-center lg:text-left lg:mr-12 ${theme === "dark" ? "text-white" : "text-black"
+          }`}
       >
         <h2 className="text-3xl sm:text-4xl lg:text-[50px] font-bold mb-6">
           About Us
@@ -52,16 +50,15 @@ const About = () => {
         </h2>
 
         <p
-          className={`text-base md:text-lg ${
-            theme === "dark" ? "text-[#B0B0B0]" : "text-[#565656]"
-          } mb-8 leading-relaxed`}
+          className={`text-base md:text-lg ${theme === "dark" ? "text-[#B0B0B0]" : "text-[#565656]"
+            } mb-8 leading-relaxed`}
         >
-          Adele was created with a clear mission: to shift the power dynamic in
+          Rentwise was created with a clear mission: to shift the power dynamic in
           renting by giving tenants a platform to share their voice. Renting a
           home is one of life’s biggest decisions, and yet so many do it
           blindly. We believe you deserve more—more insight, more honesty, and
           more control. Whether you’re a student, young professional, or growing
-          family, Adele gives you everything you need to avoid bad rentals and
+          family, Rentwise gives you everything you need to avoid bad rentals and
           choose homes that align with your lifestyle and values. Join a
           community that believes informed renting is a right, not a luxury.
         </p>

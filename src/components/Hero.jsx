@@ -56,9 +56,8 @@ const Hero = () => {
   return (
     <>
       <div
-        className={`relative ${
-          theme === "dark" ? "bg-black" : "text-white"
-        } items-center min-h-screen overflow-hidden`}
+        className={`relative ${theme === "dark" ? "bg-black" : "text-white"
+          } items-center min-h-screen overflow-hidden`}
         style={{
           backgroundImage: `url(${herobg})`,
           backgroundSize: "70%",
@@ -79,9 +78,8 @@ const Hero = () => {
             />
           </div>
           <div
-            className={`text-3xl md:text-[55px] leading-[40px] md:leading-[60px] ${
-              theme === "dark" ? "text-white" : "text-black"
-            } font-bold mb-4 capitalize`}
+            className={`text-3xl md:text-[55px] leading-[40px] md:leading-[60px] ${theme === "dark" ? "text-white" : "text-black"
+              } font-bold mb-4 capitalize`}
           >
             Rethink Renting. <br />
             <div className="mt-2 text-[#1E2EDE]"> Discover the Truth </div>
@@ -89,15 +87,14 @@ const Hero = () => {
 
           <div>
             <p
-              className={`font-medium ${
-                theme === "dark" ? "text-[#C4C4C4]" : "text-[#565656]"
-              } mt-4 max-w-3xl mx-auto px-4 leading-relaxed text-base md:text-lg`}
+              className={`font-medium ${theme === "dark" ? "text-[#C4C4C4]" : "text-[#565656]"
+                } mt-4 max-w-3xl mx-auto px-4 leading-relaxed text-base md:text-lg`}
             >
               Don’t just sign a lease—make an informed choice backed by real
-              tenant experiences. Adele is the ultimate property review and
+              tenant experiences. Rentwise is the ultimate property review and
               rating platform designed to give renters the clarity they’ve been
               missing. With verified feedback, landlord ratings, and powerful
-              filtering tools, Adele helps you uncover the full story before
+              filtering tools, Rentwise helps you uncover the full story before
               you move in.
             </p>
 
