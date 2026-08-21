@@ -2,7 +2,7 @@ const reviews = [
   {
     "@type": "Review",
     reviewBody:
-      "Adele helped me avoid a nightmare lease. I found honest reviews that matched my concerns exactly. I ended up in a safer, more welcoming place thanks to it.",
+      "Rentwise helped me avoid a nightmare lease. I found honest reviews that matched my concerns exactly. I ended up in a safer, more welcoming place thanks to it.",
     author: {
       "@type": "Person",
       name: "Rachel M., Toronto",

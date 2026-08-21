@@ -33,9 +33,8 @@ export default function ReadyJoin() {
   const { theme } = useContext(GlobalContext);
   return (
     <div
-      className={`${
-        theme === "dark" ? "bg-black" : "bg-white"
-      } py-16 transition-colors duration-300`}
+      className={`${theme === "dark" ? "bg-black" : "bg-white"
+        } py-16 transition-colors duration-300`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-12">
         <div
@@ -55,19 +54,17 @@ export default function ReadyJoin() {
 
         <div className="w-full md:w-1/2 max-w-2xl">
           <h3
-            className={`text-3xl sm:text-4xl lg:text-[44px] font-bold leading-tight mb-4 ${
-              theme === "dark" ? "text-white" : "text-black"
-            }`}
+            className={`text-3xl sm:text-4xl lg:text-[44px] font-bold leading-tight mb-4 ${theme === "dark" ? "text-white" : "text-black"
+              }`}
           >
             Take the Guesswork <br className="hidden sm:inline" />
             <span className="text-[#1E2EDE]">Out of Renting</span>
           </h3>
           <p
-            className={`text-base md:text-lg leading-relaxed mb-8 ${
-              theme === "dark" ? "text-[#B0B0B0]" : "text-[#565656]"
-            }`}
+            className={`text-base md:text-lg leading-relaxed mb-8 ${theme === "dark" ? "text-[#B0B0B0]" : "text-[#565656]"
+              }`}
           >
-            Stop relying on luck when choosing your next rental. With Adele, you
+            Stop relying on luck when choosing your next rental. With Rentwise, you
             gain access to a powerful community-driven platform built for
             renters, by renters. Discover hidden gems, avoid red flags, and
             choose your next home with confidence. Whether you're searching or
