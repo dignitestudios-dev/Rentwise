@@ -12,8 +12,8 @@ const SuccessModal = ({open, onclick}) => {
         <button type="button" className="absolute p-1 top-4 right-4 w-6 h-6 bg-gray-200 rounded-full" onClick={onclick}>
             <IoClose className="w-full h-full"/>
         </button>
-      <div className="w-16 h-16 rounded-full flex items-center justify-center bg-[#1E2EDE]">
-        <FaCheck className="text-black text-3xl"/>
+      <div className="w-16 h-16 rounded-full flex items-center justify-center bg-[#2438D8] text-white shadow-lg shadow-[#2438D8]/30">
+        <FaCheck className="text-white text-2xl"/>
       </div>
       <h2 className="text-2xl font-bold">Thank you!</h2>
       <p className="text-gray-500">We have received your email.</p>

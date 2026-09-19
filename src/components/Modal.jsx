@@ -64,8 +64,7 @@ const Modal = ({isOpen, setIsOpen}) => {
                   <div>
                 <button onClick={()=>{
                     setIsOpen(false);
-                    // setScale(0);
-                }} className={`bg-transparent border absolute w-[20px] h-[20px] md:w-auto md:h-auto md:right-5 z-50 right-3 top-2 text-center md:top-5 rounded-full ${theme=="dark"?"border-[#BFF764]":"border-black"} `} ><IoCloseSharp color={`${theme=="dark"?"#BFF764":"black"}`} className='text-[16px] ml-[1px] md:ml-0 md:text-[25px]' /></button>
+                }} className={`bg-transparent border absolute w-[24px] h-[24px] md:w-auto md:h-auto md:right-5 z-50 right-3 top-2 text-center md:top-5 rounded-full ${theme=="dark"?"border-[#2438D8] bg-black/40":"border-black/60 bg-white/40"} `} ><IoCloseSharp color={`${theme=="dark"?"#2438D8":"black"}`} className='text-[18px] md:text-[25px]' /></button>
             </div>
               <video
               autoPlay

@@ -16,8 +16,8 @@ const ErrorModal = ({ open, onclick }) => {
           >
             <IoClose className="w-full h-full" />
           </button>
-          <div className="w-16 h-16 rounded-full flex items-center justify-center bg-[#1E2EDE]">
-            <IoClose className="text-black text-3xl" />
+          <div className="w-16 h-16 rounded-full flex items-center justify-center bg-rose-600 text-white shadow-lg shadow-rose-600/30">
+            <IoClose className="text-white text-3xl" />
           </div>
           <h2 className="text-2xl font-bold">Oops!</h2>
           <p className="text-gray-500">Something went wrong. Try again!</p>

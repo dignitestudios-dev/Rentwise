@@ -1,161 +1,127 @@
 import React, { useContext } from "react";
-import { logo } from "../assets/export.js"; // Make sure the path is correct
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import { footerbg, appstore, playstore } from "../assets/export.js"; // Make sure the path is correct
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { SiInstagram } from "react-icons/si";
-import { GlobalContext } from "../context/GlobalContext";
 import { FaXTwitter } from "react-icons/fa6";
 import { RiTiktokFill } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
+import { GlobalContext } from "../context/GlobalContext";
 
 const Footer = () => {
-  const { theme, setTheme } = useContext(GlobalContext);
+  const { theme } = useContext(GlobalContext);
 
-  const navigateToLinkedIn = (url) => {
-    window.location.href = url;
-  };
+  const socialLinks = [
+    {
+      icon: <FaFacebookF />,
+      href: "https://www.facebook.com/share/1A3MBLGhHN/",
+      label: "Facebook",
+    },
+    {
+      icon: <FaXTwitter />,
+      href: "https://x.com/rentwiserglobal?s=11",
+      label: "Twitter / X",
+    },
+    {
+      icon: <FaLinkedinIn />,
+      href: "https://www.linkedin.com/company/rentwiser/",
+      label: "LinkedIn",
+    },
+    {
+      icon: <RiTiktokFill />,
+      href: "https://www.tiktok.com/@rentwiser.com?lang=en&is_from_webapp=1&sender_device=mobile&sender_web_id=7391764108955665937",
+      label: "TikTok",
+    },
+    {
+      icon: <SiInstagram />,
+      href: "https://www.instagram.com/rentwiser?igsh=aGg3dTl1YjFhdHN6",
+      label: "Instagram",
+    },
+  ];
 
   return (
     <footer
-      className={`${
-        theme == "dark" ? "bg-[#222222]" : ""
-      }   text-black relative`}
+      className={`border-t transition-colors duration-300 ${
+        theme === "dark"
+          ? "bg-[#07090E] border-slate-800 text-white"
+          : "bg-white border-slate-100 text-slate-900"
+      }`}
     >
-      <div
-        className={`py-16 relative p-10 ${
-          theme === "dark" ? "bg-[#303030]" : "bg-white"
-        }`}
-      >
-        <div className="flex md:flex-row justify-center items-center lg:px-5">
-          <div
-            className={`my-5 md:my-0 flex flex-col items-center ${
-              theme === "dark" ? " text-white" : "text-black"
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        
+        {/* Social Section */}
+        <div className="flex flex-col items-center text-center pb-12">
+          <img
+            src="/logo.png"
+            alt="Rentwiser Logo"
+            className="h-10 w-auto mb-4"
+          />
+          <h3
+            className={`text-sm sm:text-base font-medium max-w-md mb-6 ${
+              theme === "dark" ? "text-slate-300" : "text-slate-600"
             }`}
           >
-            <h3
-              className={`font-medium mb-3 lg:text-[16px] mt-4 text-center lg:w-[420px] ${
-                theme === "dark" ? "text-white" : "text-black"
-              }`}
-            >
-              Stay up-to-date with the latest Rentwiser news and updates by
-              following us on social media
-            </h3>
-            <div className="flex space-x-4">
+            Stay up-to-date with the latest Rentwiser news and platform updates by following us on social media.
+          </h3>
+
+          <div className="flex items-center space-x-3">
+            {socialLinks.map((item, index) => (
               <a
+                key={index}
+                href={item.href}
                 target="_blank"
-                href="https://www.facebook.com/share/1A3MBLGhHN/"
-                className={`text-lg hover:text-[#181818] ${
+                rel="noopener noreferrer"
+                aria-label={item.label}
+                className={`w-10 h-10 rounded-full flex items-center justify-center text-sm transition-all duration-200 border ${
                   theme === "dark"
-                    ? "text-white border-white"
-                    : "text-[#181818] border-[#181818]"
-                } border rounded-full p-3`}
+                    ? "border-slate-800 bg-[#111726] text-slate-300 hover:text-white hover:bg-[#2438D8] hover:border-[#2438D8]"
+                    : "border-slate-200 bg-[#F8FAFC] text-slate-600 hover:text-white hover:bg-[#2438D8] hover:border-[#2438D8] shadow-sm"
+                }`}
               >
-                <FaFacebookF />
+                {item.icon}
               </a>
-              <a
-                href="https://x.com/rentwiserglobal?s=11"
-                target="_blank"
-                className={`text-lg hover:text-[#181818] ${
-                  theme === "dark"
-                    ? "text-white border-white"
-                    : "text-[#181818] border-[#181818]"
-                } border rounded-full p-3`}
-              >
-                <FaXTwitter />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/rentwiser/"
-                target="_blank"
-                className={`text-lg hover:text-[#181818] ${
-                  theme === "dark"
-                    ? "text-white border-white"
-                    : "text-[#181818] border-[#181818]"
-                } border rounded-full p-3`}
-              >
-                <FaLinkedinIn />
-              </a>
-              <a
-                href="https://www.tiktok.com/@rentwiser.com?lang=en&is_from_webapp=1&sender_device=mobile&sender_web_id=7391764108955665937"
-                target="_blank"
-                className={`text-lg hover:text-[#181818] ${
-                  theme === "dark"
-                    ? "text-white border-white"
-                    : "text-[#181818] border-[#181818]"
-                } border rounded-full p-3`}
-              >
-                <RiTiktokFill />
-              </a>
-              <a
-                href="https://www.instagram.com/rentwiser?igsh=aGg3dTl1YjFhdHN6"
-                target="_blank"
-                className={`text-lg hover:text-[#181818] ${
-                  theme === "dark"
-                    ? "text-white border-white"
-                    : "text-[#181818] border-[#181818]"
-                } border rounded-full p-3`}
-              >
-                <SiInstagram />
-              </a>
-            </div>
+            ))}
           </div>
         </div>
 
+        {/* Divider and Bottom Row */}
         <div
-          className={`border-t ${
-            theme === "dark" ? "border-gray-400" : "border-gray-600"
-          } mt-6 pt-10 text-sm ${
-            theme === "dark" ? " text-white" : "text-black"
+          className={`border-t pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm ${
+            theme === "dark" ? "border-slate-800 text-slate-400" : "border-slate-200/80 text-slate-500"
           }`}
         >
-          <div className="container mx-auto flex flex-col md:flex-row justify-between items-center lg:px-5">
-            <div>
-              <p
-                className={`mt-3 text-sm md:order-1 order-2 ${
-                  theme === "dark" ? "text-[#FFFFFF]" : "text-[#565656CC]"
-                } md:text-left text-center`}
+          {/* Copyright & Legal Links */}
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6 text-center sm:text-left">
+            <p>© 2025 Rentwiser. All rights reserved.</p>
+            <div className="flex items-center gap-4">
+              <NavLink
+                to="/terms"
+                className="hover:text-[#2438D8] transition-colors underline-offset-4 hover:underline"
               >
-                Copyright © 2025 rentwiser. All rights reserved.
-              </p>
-              <div className="mt-2">
-                <NavLink
-                  to={"/terms"}
-                  className={`text-sm underline ${
-                    theme === "dark" ? "text-[#FFFFFF]" : "text-[#565656CC]"
-                  } md:text-left text-center`}
-                >
-                  {" "}
-                  Terms Condition{" "}
-                </NavLink>
-                <NavLink
-                  to={"/policy"}
-                  className={`text-sm ml-4 underline ${
-                    theme === "dark" ? "text-[#FFFFFF]" : "text-[#565656CC]"
-                  } md:text-left text-center`}
-                >
-                  {" "}
-                  Privacy Policy{" "}
-                </NavLink>
-              </div>
-            </div>
-            <div className="flex justify-end items-center md:items-end flex-col md:order-2 order-1">
-              <h3
-                className={`text-[20px] font-[600] ${
-                  theme === "dark" ? " text-white" : "text-black"
-                }`}
+                Terms of Service
+              </NavLink>
+              <span>•</span>
+              <NavLink
+                to="/policy"
+                className="hover:text-[#2438D8] transition-colors underline-offset-4 hover:underline"
               >
-                We’re always happy to help.
-              </h3>
-              <a
-                href="mailto:info@rentwiser.com"
-                className={`mt-3 text-sm text-end ${
-                  theme === "dark" ? "text-[#FFFFFF]" : "text-[#565656CC]"
-                } text-center`}
-              >
-                info@rentwiser.com
-              </a>
+                Privacy Policy
+              </NavLink>
             </div>
           </div>
+
+          {/* Support Info */}
+          <div className="text-center sm:text-right">
+            <p className="font-semibold text-slate-700 dark:text-slate-200">
+              We’re always happy to help.
+            </p>
+            <a
+              href="mailto:info@rentwiser.com"
+              className="text-[#2438D8] hover:underline font-medium"
+            >
+              info@rentwiser.com
+            </a>
+          </div>
         </div>
+
       </div>
     </footer>
   );

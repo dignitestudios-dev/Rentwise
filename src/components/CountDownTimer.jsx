@@ -55,17 +55,17 @@ const CountdownTimer = () => {
       {["days", "hours", "minutes", "seconds"].map((unit, index) => (
         <div className="flex items-center gap-4" key={unit}>
           <div className="timer w-10 md:w-16">
-            <div className={`${theme=="dark"?"bg-[#303030]":"bg-[#F8FDF2]"}  py-4  px-2 rounded-lg overflow-hidden`}>
-              <h3 className="font-semibold text-2xl text-[#1E2EDE] text-center">
+            <div className={`${theme=="dark"?"bg-[#1E2234]":"bg-[#EEF1FF]"} py-4 px-2 rounded-lg overflow-hidden`}>
+              <h3 className="font-semibold text-2xl text-[#2438D8] text-center">
                 {timeLeft[unit]}
               </h3>
             </div>
-            <p className={`text-lg capitalize font-medium ${theme=="dark"?"text-black":"text-gray-900"}  mt-1 text-center w-full`}>
+            <p className={`text-xs md:text-sm capitalize font-medium ${theme=="dark"?"text-slate-300":"text-slate-600"} mt-1 text-center w-full`}>
               {unit}
             </p>
           </div>
           {index < 3 && (
-            <h3 className="font-semibold mb-6 text-2xl text-[#1E2EDE]">:</h3>
+            <h3 className="font-semibold mb-6 text-2xl text-[#2438D8]">:</h3>
           )}
         </div >
       ))}

@@ -1,21 +1,35 @@
 import React, { useContext, useEffect, useState } from "react";
-import { logo } from "../assets/export";
-import { IoMoon } from "react-icons/io5";
+import { IoMoon, IoClose } from "react-icons/io5";
 import { BsFillBrightnessHighFill } from "react-icons/bs";
+import { HiMenuAlt3 } from "react-icons/hi";
+import { FaLinkedinIn } from "react-icons/fa";
 import { GlobalContext } from "../context/GlobalContext";
 import { useLocation, useNavigate } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ className = "" }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
   const { theme, setTheme } = useContext(GlobalContext);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+      const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
+      if (totalScroll > 0) {
+        setScrollProgress((window.scrollY / totalScroll) * 100);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-  console.log(theme, "theme");
 
-  const location = useLocation();
-  const navigate = useNavigate();
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -31,6 +45,7 @@ const Navbar = () => {
       navigate(`/#${sectionId}`);
     }
   };
+
   useEffect(() => {
     const hash = window.location.hash;
     if (location.pathname === "/" && hash) {
@@ -39,173 +54,150 @@ const Navbar = () => {
     }
   }, [location]);
 
-  const navigateToLinkedIn = (url) => {
-    window.location.href = url;
-  };
+  const navLinks = [
+    { name: "Home", id: "home" },
+    { name: "About Us", id: "aboutus" },
+    { name: "Features", id: "features" },
+    { name: "Testimonials", id: "testimonials" },
+    { name: "Contact Us", id: "contactus" },
+  ];
 
   return (
-    <div className="bg-transparent relative text-black flex flex-col items-center pt-8">
-      <nav className="flex items-center justify-between w-full px-4 md:px-10 lg:px-36 text-sm">
-        <div className="flex items-center mb-2 md:mb-0 pb-1">
-          <img src={"/logo.png"} alt="Logo" className="h-10 md:h-20" />
-        </div>
+    <>
+      {/* Dynamic Top Scroll Progress Indicator */}
+      <div className="fixed top-0 left-0 right-0 h-[3px] z-50 bg-transparent">
+        <div
+          className="h-full bg-gradient-to-r from-[#2438D8] via-[#4F46E5] to-[#8CA0FF] transition-all duration-150 ease-out shadow-[0_0_10px_rgba(36,56,216,0.6)]"
+          style={{ width: `${scrollProgress}%` }}
+        />
+      </div>
 
-        <div className="hidden md:flex flex-1 justify-center mb-2 ml-14">
-          <ul
-            className={`flex space-x-8 md:space-x-16 lg:space-x-24  ${
-              theme == "dark" ? "text-white" : "text-black  "
-            }  font-normal`}
-          >
-            <li
-              className="hover:underline hover:decoration-[#1E2EDE] hover:decoration-2 cursor-pointer"
-              onClick={() => handleNavClick("home")}
-            >
-              Home
-            </li>
-            <li
-              className="hover:underline hover:decoration-[#1E2EDE] hover:decoration-2 cursor-pointer"
-              onClick={() => handleNavClick("aboutus")}
-            >
-              About Us
-            </li>
-            <li
-              className="hover:underline hover:decoration-[#1E2EDE] hover:decoration-2 cursor-pointer"
-              onClick={() => handleNavClick("features")}
-            >
-              Features
-            </li>
-            <li
-              className="hover:underline hover:decoration-[#1E2EDE] hover:decoration-2 cursor-pointer"
-              onClick={() => handleNavClick("testimonials")}
-            >
-              Testimonials
-            </li>
-            <li
-              className="hover:underline hover:decoration-[#1E2EDE] hover:decoration-2 cursor-pointer"
-              onClick={() => handleNavClick("contactus")}
-            >
-              Contact Us
-            </li>
-          </ul>
-        </div>
-
-        <div className="w-auto flex gap-3 me-5 justify-start items-center">
-          <button
-            aria-label="button"
-            name="theme-toggle"
-            type="button"
-            onClick={() => setTheme(theme == "dark" ? "light" : "dark")}
-            className={`${
-              theme == "light" ? "bg-[#1E2EDE]/[0.18]" : "bg-[#A9A1D7]/[0.18]"
-            } rounded-full transition-all duration-300  w-[50px] lg:w-[70px] h-[30px] lg:h-[37.5px] p-[4px] flex justify-start items-center`}
-          >
-            <span
-              className={`h-6 w-6 lg:h-8 lg:w-8 text-xl text-white transition-all duration-300 rounded-full flex items-center justify-center ${
-                theme == "light"
-                  ? "translate-x-0 bg-[#1E2EDE]"
-                  : "translate-x-[calc(100%-28%)] lg:translate-x-[calc(100%-3%)] bg-[#342A6D]"
-              } `}
-            >
-              {theme == "light" ? (
-                <BsFillBrightnessHighFill className="text-lg" />
-              ) : (
-                <IoMoon />
-              )}
-            </span>
-          </button>
-
-          <button
-            aria-label="button"
-            type="button"
-            name="menu-toggle"
-            onClick={() => toggleMenu()}
-            className="flex lg:hidden h-4 lg:h-auto"
+      <header
+        className={`w-full z-40 transition-all duration-300 ${
+          scrolled
+            ? theme === "dark"
+              ? "bg-[#080B11]/95 backdrop-blur-md shadow-lg py-2.5 sm:py-3 border-b border-slate-800/80"
+              : "bg-white/95 backdrop-blur-md shadow-sm py-2.5 sm:py-3 border-b border-slate-100"
+            : "bg-transparent py-4 sm:py-5"
+        } ${className}`}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+          {/* Logo */}
+          <div
+            onClick={() => handleNavClick("home")}
+            className="cursor-pointer flex items-center gap-2 group shrink-0"
           >
             <img
-              src={theme == "light" ? "/hamburger.webp" : "/menu-dark.webp"}
-              className="h-full"
-              height={28}
-              width={34}
-              alt="hamburger-icon"
-              title="hamburger-icon"
+              src="/logo.png"
+              alt="Rentwiser Logo"
+              className="h-8 sm:h-10 md:h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
             />
-          </button>
+          </div>
 
-          {/* <button
-          className="md:hidden flex items-center justify-end focus:outline-none"
-          onClick={toggleMenu}
-        >
-          <svg
-            className="w-6 h-6 text-black"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
-          </svg>
-        </button> */}
-        </div>
-        {/* to='https://www.linkedin.com/company/rentwiser/' target='_blank' */}
-        <div className="hidden md:flex mb-2">
-          <button
-            onClick={() =>
-              navigateToLinkedIn("https://www.linkedin.com/company/rentwiser/")
-            }
-            className="bg-[#1E2EDE] text-white px-5 py-2 rounded-full font-medium hover:bg-gray-200 w-[188px] h-[40px]"
-          >
-            Follow Us On <span className="font-bold">LinkedIn</span>
-          </button>
-        </div>
-      </nav>
+          {/* Desktop Navigation Links - Shown on lg screens (>= 1024px) for generous spacing */}
+          <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
+            {navLinks.map((link) => (
+              <button
+                key={link.id}
+                onClick={() => handleNavClick(link.id)}
+                className={`text-sm xl:text-[15px] font-medium transition-colors duration-200 relative py-1 hover:text-[#2438D8] ${
+                  theme === "dark" ? "text-slate-300" : "text-slate-700"
+                }`}
+              >
+                {link.name}
+              </button>
+            ))}
+          </nav>
 
-      {isOpen && (
-        <div className="md:hidden bg-[#0D1B2A]  text-black w-full py-4 px-4">
-          <ul className="flex flex-col space-y-4 items-center justify-center uppercase">
-            <li
-              className="hover:underline cursor-pointer"
-              onClick={() => handleNavClick("home")}
-            >
-              Home
-            </li>
-            <li
-              className="hover:underline cursor-pointer"
-              onClick={() => handleNavClick("aboutus")}
-            >
-              About Us
-            </li>
-            <li
-              className="hover:underline cursor-pointer"
-              onClick={() => handleNavClick("features")}
-            >
-              Features
-            </li>
-            <li
-              className="hover:underline cursor-pointer"
-              onClick={() => handleNavClick("testimonials")}
-            >
-              Testimonials
-            </li>
-            <li
-              className="hover:underline cursor-pointer"
-              onClick={() => handleNavClick("contactus")}
-            >
-              Contact Us
-            </li>
-          </ul>
-          <div className="flex justify-center mt-2">
+          {/* Right Action Items */}
+          <div className="flex items-center gap-2.5 sm:gap-3.5 shrink-0">
+            {/* Theme Toggle Button */}
             <button
-              onClick={()=>
-                navigateToLinkedIn("https://www.linkedin.com/company/rentwiser/")
-              }
-              className="bg-[#1E2EDE] text-white px-5 py-2 rounded-full font-medium hover:bg-gray-200 md:w-[188px] h-[40px]"
+              aria-label="Toggle Theme"
+              name="theme-toggle"
+              type="button"
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              className={`relative rounded-full transition-colors duration-300 w-12 sm:w-14 h-7 sm:h-8 p-1 flex items-center ${
+                theme === "dark" ? "bg-slate-800 ring-1 ring-slate-700" : "bg-[#EEF1FF] ring-1 ring-[#2438D8]/20"
+              }`}
             >
-              Follow Us On <span className="font-bold">LinkedIn</span>
+              <span
+                className={`w-5 h-5 sm:w-6 sm:h-6 rounded-full flex items-center justify-center text-white text-xs shadow-md transition-transform duration-300 ${
+                  theme === "dark"
+                    ? "translate-x-5 sm:translate-x-6 bg-[#2438D8]"
+                    : "translate-x-0 bg-[#2438D8]"
+                }`}
+              >
+                {theme === "dark" ? <IoMoon className="text-[11px] sm:text-xs" /> : <BsFillBrightnessHighFill className="text-[11px] sm:text-xs" />}
+              </span>
+            </button>
+
+            {/* LinkedIn CTA Button - Shown on desktop */}
+            <a
+              href="https://www.linkedin.com/company/rentwiser/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden lg:inline-flex items-center gap-2 bg-gradient-to-r from-[#2438D8] to-[#1726A8] hover:from-[#1726A8] hover:to-[#2438D8] text-white text-xs xl:text-sm font-semibold px-4 xl:px-5 py-2.5 rounded-full shadow-md hover:shadow-lg hover:shadow-[#2438D8]/30 transition-all duration-200 transform hover:-translate-y-0.5 whitespace-nowrap"
+            >
+              <FaLinkedinIn className="text-xs sm:text-sm" />
+              <span>Follow Us On LinkedIn</span>
+            </a>
+
+            {/* Mobile / Tablet Hamburger Button */}
+            <button
+              aria-label="Toggle navigation menu"
+              type="button"
+              onClick={toggleMenu}
+              className={`p-2 rounded-xl lg:hidden transition-colors ${
+                theme === "dark"
+                  ? "text-white bg-slate-800 hover:bg-slate-700"
+                  : "text-slate-800 bg-slate-100 hover:bg-slate-200"
+              }`}
+            >
+              {isOpen ? <IoClose className="text-xl sm:text-2xl" /> : <HiMenuAlt3 className="text-xl sm:text-2xl" />}
             </button>
           </div>
         </div>
-      )}
-    </div>
+
+        {/* Mobile / Tablet Menu Dropdown */}
+        {isOpen && (
+          <div
+            className={`lg:hidden px-6 pt-4 pb-6 mt-3 border-b shadow-xl transition-all duration-300 animate-fadeIn ${
+              theme === "dark"
+                ? "bg-[#0F172A] border-slate-800 text-white"
+                : "bg-white border-slate-100 text-slate-900"
+            }`}
+          >
+            <div className="flex flex-col space-y-3">
+              {navLinks.map((link) => (
+                <button
+                  key={link.id}
+                  onClick={() => handleNavClick(link.id)}
+                  className={`text-left py-2.5 px-3 rounded-xl text-base font-medium transition-colors ${
+                    theme === "dark"
+                      ? "hover:bg-slate-800 hover:text-[#EEF1FF]"
+                      : "hover:bg-[#EEF1FF] hover:text-[#2438D8]"
+                  }`}
+                >
+                  {link.name}
+                </button>
+              ))}
+              <div className="pt-3 border-t border-slate-200/50 dark:border-slate-800">
+                <a
+                  href="https://www.linkedin.com/company/rentwiser/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full flex items-center justify-center gap-2 bg-[#2438D8] hover:bg-[#1726A8] text-white text-sm font-semibold py-3 rounded-full shadow-md"
+                >
+                  <FaLinkedinIn />
+                  <span>Follow Us On LinkedIn</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        )}
+      </header>
+    </>
   );
 };
 

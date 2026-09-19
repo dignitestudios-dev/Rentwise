@@ -6,6 +6,14 @@ export const GlobalContextProvider = ({ children }) => {
    // Theme Toggle:
   const [theme, setTheme] = useState("light");
 
+  React.useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
+
   return (
     <GlobalContext.Provider
       value={{
