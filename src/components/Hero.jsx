@@ -193,10 +193,10 @@ const Hero = () => {
               <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-[#2438D8] text-white flex items-center justify-center shrink-0 shadow-sm shadow-[#2438D8]/30">
                 <FaCheckCircle className="text-sm sm:text-base" />
               </div>
-              <div className="text-left">
+              {/* <div className="text-left">
                 <p className="text-[11px] sm:text-xs font-bold text-slate-800 dark:text-white whitespace-nowrap">Authentic Tenant Voice</p>
                 <p className="text-[10px] sm:text-[11px] text-slate-500 dark:text-slate-400 whitespace-nowrap">100% Screened Reviews</p>
-              </div>
+              </div> */}
             </div>
 
             {/* Tilted Phones Container */}
