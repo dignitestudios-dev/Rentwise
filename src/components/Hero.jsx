@@ -58,8 +58,8 @@ const Hero = () => {
       }`}
     >
       {/* Background Dot Grid Pattern & Ambient Glows */}
-      <div className="absolute inset-0 bg-grid-pattern pointer-events-none opacity-70" />
-      <HeroDecorations />
+      <div className="absolute inset-0 bg-grid-pattern pointer-events-none opacity-70 z-0" />
+      <HeroDecorations className="z-0" />
 
       <Navbar />
 

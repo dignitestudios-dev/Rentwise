@@ -73,11 +73,15 @@ const Navbar = ({ className = "" }) => {
       </div>
 
       <header
-        className={`w-full z-40 transition-all duration-300 ${
+        className={`relative w-full z-40 transition-all duration-300 ${
           scrolled
             ? theme === "dark"
               ? "bg-[#080B11]/95 backdrop-blur-md shadow-lg py-2.5 sm:py-3 border-b border-slate-800/80"
               : "bg-white/95 backdrop-blur-md shadow-sm py-2.5 sm:py-3 border-b border-slate-100"
+            : isOpen
+            ? theme === "dark"
+              ? "bg-[#0F172A] shadow-md py-4 sm:py-5"
+              : "bg-white shadow-sm py-4 sm:py-5"
             : "bg-transparent py-4 sm:py-5"
         } ${className}`}
       >
@@ -162,7 +166,7 @@ const Navbar = ({ className = "" }) => {
         {/* Mobile / Tablet Menu Dropdown */}
         {isOpen && (
           <div
-            className={`lg:hidden px-6 pt-4 pb-6 mt-3 border-b shadow-xl transition-all duration-300 animate-fadeIn ${
+            className={`relative z-50 lg:hidden px-6 pt-4 pb-6 mt-3 border-b shadow-xl transition-all duration-300 animate-fadeIn ${
               theme === "dark"
                 ? "bg-[#0F172A] border-slate-800 text-white"
                 : "bg-white border-slate-100 text-slate-900"

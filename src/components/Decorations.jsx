@@ -50,35 +50,35 @@ export const HeroDecorations = ({ className = "" }) => (
 
     {/* Sparkle Stars in Brand Blue */}
     {/* Top Left Star */}
-    <div className="absolute top-[18%] left-[8%] sm:left-[14%] animate-float">
+    <div className="hidden md:block absolute top-[18%] left-[8%] sm:left-[14%] animate-float">
       <svg className="w-8 h-8 md:w-10 md:h-10 text-[#2438D8]" viewBox="0 0 24 24" fill="currentColor">
         <path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z" />
       </svg>
     </div>
 
     {/* Top Right Star */}
-    <div className="absolute top-[14%] right-[10%] sm:right-[16%] animate-float-reverse">
+    <div className="hidden md:block absolute top-[14%] right-[10%] sm:right-[16%] animate-float-reverse">
       <svg className="w-6 h-6 md:w-8 md:h-8 text-[#2438D8] opacity-80" viewBox="0 0 24 24" fill="currentColor">
         <path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z" />
       </svg>
     </div>
 
     {/* Middle Left Star */}
-    <div className="absolute top-[52%] left-[4%] sm:left-[8%] animate-float-slow">
+    <div className="hidden md:block absolute top-[52%] left-[4%] sm:left-[8%] animate-float-slow">
       <svg className="w-6 h-6 md:w-7 md:h-7 text-[#2438D8] opacity-75" viewBox="0 0 24 24" fill="currentColor">
         <path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z" />
       </svg>
     </div>
 
     {/* Middle Right Star */}
-    <div className="absolute top-[56%] right-[6%] sm:right-[10%] animate-float">
+    <div className="hidden md:block absolute top-[56%] right-[6%] sm:right-[10%] animate-float">
       <svg className="w-7 h-7 md:w-9 md:h-9 text-[#2438D8] opacity-90" viewBox="0 0 24 24" fill="currentColor">
         <path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z" />
       </svg>
     </div>
 
     {/* Bottom Star */}
-    <div className="absolute bottom-[16%] left-[12%] animate-float-reverse">
+    <div className="hidden md:block absolute bottom-[16%] left-[12%] animate-float-reverse">
       <svg className="w-5 h-5 md:w-6 md:h-6 text-[#2438D8] opacity-70" viewBox="0 0 24 24" fill="currentColor">
         <path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z" />
       </svg>
@@ -133,21 +133,21 @@ export const MockupDecorations = ({ className = "" }) => (
     </svg>
 
     {/* Sparkle Star Top Left */}
-    <div className="absolute top-[8%] left-[8%] animate-float">
+    <div className="hidden sm:block absolute top-[8%] left-[8%] animate-float">
       <svg className="w-7 h-7 text-[#2438D8] opacity-85" viewBox="0 0 24 24" fill="currentColor">
         <path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z" />
       </svg>
     </div>
 
     {/* Sparkle Star Bottom Left */}
-    <div className="absolute bottom-[20%] left-[10%] animate-float-reverse">
+    <div className="hidden sm:block absolute bottom-[20%] left-[10%] animate-float-reverse">
       <svg className="w-6 h-6 text-[#2438D8] opacity-80" viewBox="0 0 24 24" fill="currentColor">
         <path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z" />
       </svg>
     </div>
 
     {/* Sparkle Star Right */}
-    <div className="absolute top-[40%] right-[6%] animate-float-slow">
+    <div className="hidden sm:block absolute top-[40%] right-[6%] animate-float-slow">
       <svg className="w-8 h-8 text-[#2438D8] opacity-90" viewBox="0 0 24 24" fill="currentColor">
         <path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z" />
       </svg>
